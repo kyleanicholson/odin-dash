@@ -1,0 +1,111 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  padding: 0;
+    list-style: none;
+  }
+
+
+.wrapper {
+  display:grid;
+  grid-template-columns: 1fr 3fr;
+}
+.button {
+    background-color: steelblue; /* Green */
+    border: none;
+    border-radius:25px;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.avatar{
+  border-radius:50%;
+}
+
+.sidebar{
+  background-color: steelblue;
+  color: white;
+}
+#brand{
+  display:flex;
+  font-weight: bold;
+  color: white;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding-left: 1.75rem;
+}
+.sidebar nav {
+  padding: 1.75rem;
+  display:flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sidebar nav ul {
+  display:flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.sidebar nav ul li {
+  display:flex;
+  gap: 1rem;
+}
+.sidebar nav ul li a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display:flex;
+  gap: 1rem;
+}
+.sidebar nav ul li a:hover {
+  color: #f1f1f1;
+}
+
+.main-container{
+  display:grid;
+}
+
+header{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #ccc;
+  padding: 1.75rem;
+}
+
+.header-row{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.header-row *{
+  display:flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.greeting {
+  display:flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
